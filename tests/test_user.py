@@ -8,7 +8,8 @@ class TestUser(unittest.TestCase):
     """Define unit tests for the User class."""
 
     def test_attributes(self):
-        """Test that User class has email, password, first_name, and last_name attributes."""
+        """Test that User class has email, password,
+        first_name, and last_name attributes."""
         user = User()
         self.assertTrue(hasattr(user, "email"))
         self.assertTrue(hasattr(user, "password"))
