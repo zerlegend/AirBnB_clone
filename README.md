@@ -11,6 +11,44 @@ This project is a web-based application for booking short-term accommodations, p
 
 ### Usage
 
+In interactive mode
+
+```bash
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit                                                                                                       
+(hbnb)
+(hbnb)
+(hbnb) quit
+$
+```
+
+in Non-interactive mode
+
+```bash
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+```
 ### Contributing
 
 ### License
